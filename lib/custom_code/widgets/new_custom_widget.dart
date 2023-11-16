@@ -36,7 +36,7 @@ class _NewCustomWidgetState extends State<NewCustomWidget> {
           style: const TextStyle(
             fontSize: 47.0,
             fontFamily: 'Horizon',
-            color: Colors.white,
+            color: Colors.black,
             fontWeight: FontWeight.w600,
           ),
           child: AnimatedTextKit(

@@ -72,6 +72,8 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
     _model = createModel(context, () => ProjectsModel());
 
     _model.expandableController = ExpandableController(initialExpanded: false);
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

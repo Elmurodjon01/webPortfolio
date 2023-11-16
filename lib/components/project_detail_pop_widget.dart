@@ -37,6 +37,8 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => ProjectDetailPopModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -206,7 +206,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'VS kodi',
     },
     '3bzoa3td': {
-      'en': 'FlutterFlow',
+      'en': 'Google services',
       'ko': 'FlutterFlow',
       'ru': 'FlutterFlow',
       'uz': 'FlutterFlow',
@@ -274,7 +274,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Южная Корея, Инчхон',
       'uz': 'Janubiy Koreya, Incheon',
     },
-    'sx4y5b5k': {
+    'n1ber0gm': {
       'en': '22221',
       'ko': '',
       'ru': '',
@@ -633,7 +633,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Uy',
     },
     'uy1g5lv9': {
-      'en': 'About',
+      'en': 'Resume',
       'ko': '에 대한',
       'ru': 'О',
       'uz': 'Haqida',
@@ -679,12 +679,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': '트위터',
       'ru': 'Твиттер',
       'uz': 'Twitter',
-    },
-    'jrpbgrcj': {
-      'en': 'Facebook',
-      'ko': '페이스북',
-      'ru': 'Фейсбук',
-      'uz': 'Facebook',
     },
   },
   // Miscellaneous

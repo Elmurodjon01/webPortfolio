@@ -95,6 +95,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => HomePageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -154,7 +156,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             alignment: const AlignmentDirectional(-0.79, 0.00),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.38,
-                              height: MediaQuery.sizeOf(context).height * 0.45,
+                              height: MediaQuery.sizeOf(context).height * 0.46,
                               decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -229,7 +231,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                       const Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 0.0, 7.0, 24.0),
+                                            5.0, 0.0, 7.0, 30.0),
                                         child: SizedBox(
                                           width: 200.0,
                                           height: 70.0,
@@ -320,7 +322,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             ),
                           ),
                           Align(
-                            alignment: const AlignmentDirectional(0.64, 0.00),
+                            alignment: const AlignmentDirectional(0.81, -3.16),
                             child: Material(
                               color: Colors.transparent,
                               elevation: 10.0,
@@ -695,7 +697,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 height: 50.0,
                                                 decoration: const BoxDecoration(),
                                                 child: Lottie.asset(
-                                                  'assets/lottie_animations/flutterflow.json',
+                                                  'assets/lottie_animations/vscode.json',
                                                   width: 150.0,
                                                   height: 130.0,
                                                   fit: BoxFit.cover,
@@ -719,7 +721,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           ),
                                         ),
                                         Container(
-                                          width: 170.0,
+                                          width: 210.0,
                                           height: 50.0,
                                           decoration: const BoxDecoration(),
                                           child: Row(
@@ -732,7 +734,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 height: 50.0,
                                                 decoration: const BoxDecoration(),
                                                 child: Lottie.asset(
-                                                  'assets/lottie_animations/flutterflow.json',
+                                                  'assets/lottie_animations/google.json',
                                                   width: 150.0,
                                                   height: 130.0,
                                                   fit: BoxFit.cover,
@@ -742,7 +744,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  '3bzoa3td' /* FlutterFlow */,
+                                                  '3bzoa3td' /* Google services */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -782,23 +784,27 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             alignment: const AlignmentDirectional(0.00, 0.00),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 130.0),
+                                  0.0, 0.0, 0.0, 110.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'q4ysksye' /* I studied at */,
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 20.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'q4ysksye' /* I studied at */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .headlineMedium
+                                          .override(
+                                            fontFamily: 'Roboto Mono',
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .headlineMedium
-                                        .override(
-                                          fontFamily: 'Roboto Mono',
-                                          fontWeight: FontWeight.w500,
-                                        ),
                                   ),
                                   Align(
                                     alignment: const AlignmentDirectional(0.00, 0.00),

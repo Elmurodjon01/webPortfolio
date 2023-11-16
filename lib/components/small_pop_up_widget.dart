@@ -30,6 +30,8 @@ class _SmallPopUpWidgetState extends State<SmallPopUpWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SmallPopUpModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

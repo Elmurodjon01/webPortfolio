@@ -92,6 +92,8 @@ class _SkillsWidgetState extends State<SkillsWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => SkillsModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -153,15 +155,19 @@ class _SkillsWidgetState extends State<SkillsWidget>
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Text(
-                                FFLocalizations.of(context).getText(
-                                  'hedst07e' /* My Story */,
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 15.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'hedst07e' /* My Story */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .headlineMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                      ),
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .headlineMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                    ),
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(

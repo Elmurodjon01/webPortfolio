@@ -25,6 +25,8 @@ class _SocialWidgetState extends State<SocialWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SocialModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -45,26 +47,55 @@ class _SocialWidgetState extends State<SocialWidget> {
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: [
-          Lottie.asset(
-            'assets/lottie_animations/githubsocial.json',
-            width: 60.0,
-            height: 60.0,
-            fit: BoxFit.cover,
-            animate: true,
+          InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              await launchURL(
+                  'https://github.com/Elmurodjon01?tab=repositories');
+            },
+            child: Lottie.asset(
+              'assets/lottie_animations/githubsocial.json',
+              width: 60.0,
+              height: 60.0,
+              fit: BoxFit.cover,
+              animate: true,
+            ),
           ),
-          Lottie.asset(
-            'assets/lottie_animations/linkedin.json',
-            width: 60.0,
-            height: 60.0,
-            fit: BoxFit.cover,
-            animate: true,
+          InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              await launchURL(
+                  'https://www.linkedin.com/in/elmurodjon-abdullajonov-9878a4215/');
+            },
+            child: Lottie.asset(
+              'assets/lottie_animations/linkedin.json',
+              width: 60.0,
+              height: 60.0,
+              fit: BoxFit.cover,
+              animate: true,
+            ),
           ),
-          Lottie.asset(
-            'assets/lottie_animations/twitter.json',
-            width: 60.0,
-            height: 60.0,
-            fit: BoxFit.cover,
-            animate: true,
+          InkWell(
+            splashColor: Colors.transparent,
+            focusColor: Colors.transparent,
+            hoverColor: Colors.transparent,
+            highlightColor: Colors.transparent,
+            onTap: () async {
+              await launchURL('https://twitter.com/EAbdullajonov');
+            },
+            child: Lottie.asset(
+              'assets/lottie_animations/twitter.json',
+              width: 60.0,
+              height: 60.0,
+              fit: BoxFit.cover,
+              animate: true,
+            ),
           ),
         ],
       ),

@@ -45,6 +45,8 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => ResumePageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -100,7 +102,7 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: const FlutterFlowPdfViewer(
-                          networkPath: 'http://www.pdf995.com/samples/pdf.pdf',
+                          assetPath: 'assets/pdfs/Resumenew.pdf',
                           height: 300.0,
                           horizontalScroll: false,
                         ),
@@ -142,6 +144,9 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
                         );
                       },
                     ).then((value) => safeSetState(() {}));
+
+                    await launchURL(
+                        'https://drive.google.com/file/d/1TY6lSTpw5LnXnLW-mUydk4qf9SN8KcfU/view?usp=sharing');
                   },
                   text: FFLocalizations.of(context).getText(
                     '0kt354ma' /* Download */,

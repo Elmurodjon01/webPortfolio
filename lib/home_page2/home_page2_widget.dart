@@ -223,6 +223,8 @@ class _HomePage2WidgetState extends State<HomePage2Widget>
           !anim.applyInitialState),
       this,
     );
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -102,6 +102,8 @@ class _ContactWidgetState extends State<ContactWidget>
 
     _model.textController3 ??= TextEditingController();
     _model.textFieldFocusNode3 ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -271,7 +273,7 @@ class _ContactWidgetState extends State<ContactWidget>
                                     ),
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'sx4y5b5k' /* 22221 */,
+                                        'n1ber0gm' /* 22221 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .titleMedium,

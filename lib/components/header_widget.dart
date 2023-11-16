@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => HeaderModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -437,6 +440,27 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           ],
                         ),
                       ),
+                    ),
+                    FlutterFlowLanguageSelector(
+                      width: 150.0,
+                      backgroundColor:
+                          FlutterFlowTheme.of(context).primaryBackground,
+                      borderColor: Colors.transparent,
+                      dropdownColor:
+                          FlutterFlowTheme.of(context).primaryBackground,
+                      dropdownIconColor: Colors.black,
+                      borderRadius: 8.0,
+                      textStyle: const TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.normal,
+                        fontSize: 18.0,
+                      ),
+                      hideFlags: true,
+                      flagSize: 24.0,
+                      flagTextGap: 8.0,
+                      currentLanguage: FFLocalizations.of(context).languageCode,
+                      languages: FFLocalizations.languages(),
+                      onChanged: (lang) => setAppLanguage(context, lang),
                     ),
                   ],
                 ),
