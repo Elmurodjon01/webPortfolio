@@ -434,15 +434,15 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                     child:
                                                         const ProjectDetailPopWidget(
                                                       image1:
-                                                          'https://plus.unsplash.com/premium_photo-1675827055694-010aef2cf08f?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                                          'https://user-images.githubusercontent.com/96878908/283365144-db95bdbb-324a-4095-be52-451234ed8d3c.png',
                                                       image2:
-                                                          'https://plus.unsplash.com/premium_photo-1675827055620-24d540e0892a?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                                          'https://user-images.githubusercontent.com/96878908/283365166-1c7fe312-f15d-4f22-810f-fe56306ab58f.png',
                                                       image3:
-                                                          'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                                          'https://user-images.githubusercontent.com/96878908/283365155-cf823d6e-1226-45fa-a59b-1d1afd3182cb.png',
                                                       image4:
-                                                          'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                                          'https://user-images.githubusercontent.com/96878908/283365192-a9153612-0a66-4a71-a04d-62b200fba7b6.png',
                                                       image5:
-                                                          'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                                                          'https://user-images.githubusercontent.com/96878908/283365173-69819be1-4e21-4ef4-86d5-4944f8fb8986.png',
                                                     ),
                                                   ),
                                                 );
@@ -472,10 +472,10 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                       BorderRadius.circular(
                                                           8.0),
                                                   child: Image.network(
-                                                    'https://picsum.photos/seed/97/600',
+                                                    'https://user-images.githubusercontent.com/96878908/283365185-f3cbd453-9d0a-40c5-942b-c4f57ac7681e.png',
                                                     width: 300.0,
                                                     height: 314.0,
-                                                    fit: BoxFit.cover,
+                                                    fit: BoxFit.fitHeight,
                                                   ),
                                                 ),
                                                 Align(

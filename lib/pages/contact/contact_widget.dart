@@ -1,6 +1,7 @@
+import '/backend/backend.dart';
+import '/components/email_success_widget.dart';
 import '/components/footer_widget.dart';
 import '/components/header_widget.dart';
-import '/components/small_pop_up_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -517,6 +518,16 @@ class _ContactWidgetState extends State<ContactWidget>
                                   alignment: const AlignmentDirectional(0.00, 0.00),
                                   child: FFButtonWidget(
                                     onPressed: () async {
+                                      await EmailRecord.collection
+                                          .doc()
+                                          .set(createEmailRecordData(
+                                            sender: _model.textController2.text,
+                                            senderName:
+                                                _model.textController1.text,
+                                            message:
+                                                _model.textController3.text,
+                                            timeSent: getCurrentTimestamp,
+                                          ));
                                       await showModalBottomSheet(
                                         isScrollControlled: true,
                                         backgroundColor: Colors.transparent,
@@ -534,8 +545,9 @@ class _ContactWidgetState extends State<ContactWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: const SmallPopUpWidget(
-                                                message: 'Email sent!',
+                                              child: const EmailSuccessWidget(
+                                                message:
+                                                    'Email send was successful!',
                                               ),
                                             ),
                                           );

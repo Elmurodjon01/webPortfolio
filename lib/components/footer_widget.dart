@@ -1,6 +1,7 @@
 import '/components/social_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/pages/check_messages/check_messages_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'footer_model.dart';
@@ -97,9 +98,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Noto Serif',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .secondaryBackground,
+                                                color: Colors.transparent,
                                                 letterSpacing: 1.0,
                                               ),
                                         ),
@@ -396,18 +395,42 @@ class _FooterWidgetState extends State<FooterWidget> {
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'jw23z1ri' /* Social */,
+                                        child: InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onLongPress: () async {
+                                            await showModalBottomSheet(
+                                              isScrollControlled: true,
+                                              backgroundColor:
+                                                  Colors.transparent,
+                                              enableDrag: false,
+                                              context: context,
+                                              builder: (context) {
+                                                return Padding(
+                                                  padding:
+                                                      MediaQuery.viewInsetsOf(
+                                                          context),
+                                                  child: const CheckMessagesWidget(),
+                                                );
+                                              },
+                                            ).then(
+                                                (value) => safeSetState(() {}));
+                                          },
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'jw23z1ri' /* Social */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Noto Serif',
+                                                  color: Colors.black,
+                                                  letterSpacing: 1.0,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
                                           ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyLarge
-                                              .override(
-                                                fontFamily: 'Noto Serif',
-                                                color: Colors.black,
-                                                letterSpacing: 1.0,
-                                                fontWeight: FontWeight.w500,
-                                              ),
                                         ),
                                       ),
                                       Padding(

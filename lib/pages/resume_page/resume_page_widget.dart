@@ -124,6 +124,8 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
                 alignment: const AlignmentDirectional(0.00, 1.00),
                 child: FFButtonWidget(
                   onPressed: () async {
+                    await launchURL(
+                        'https://drive.google.com/file/d/1TY6lSTpw5LnXnLW-mUydk4qf9SN8KcfU/view?usp=sharing');
                     await showModalBottomSheet(
                       isScrollControlled: true,
                       backgroundColor: Colors.transparent,
@@ -144,9 +146,6 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
                         );
                       },
                     ).then((value) => safeSetState(() {}));
-
-                    await launchURL(
-                        'https://drive.google.com/file/d/1TY6lSTpw5LnXnLW-mUydk4qf9SN8KcfU/view?usp=sharing');
                   },
                   text: FFLocalizations.of(context).getText(
                     '0kt354ma' /* Download */,

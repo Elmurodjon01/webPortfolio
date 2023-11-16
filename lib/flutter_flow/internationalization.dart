@@ -681,6 +681,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Twitter',
     },
   },
+  // checkMessages
+  {
+    '0uie4an7': {
+      'en': 'Email',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'ews4dmvf': {
+      'en': 'Password',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'juhen1re': {
+      'en': 'check',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+  },
   // Miscellaneous
   {
     'jzplktut': {

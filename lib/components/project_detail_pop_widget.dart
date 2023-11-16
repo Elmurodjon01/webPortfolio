@@ -87,6 +87,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
                     padding:
@@ -103,7 +104,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                           widget.image1!,
                           width: 300.0,
                           height: 200.0,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
@@ -123,7 +124,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                           widget.image2!,
                           width: 300.0,
                           height: 200.0,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
@@ -143,7 +144,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                           widget.image3!,
                           width: 300.0,
                           height: 200.0,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
@@ -163,7 +164,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                           widget.image4!,
                           width: 300.0,
                           height: 200.0,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
@@ -183,7 +184,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                           widget.image5!,
                           width: 300.0,
                           height: 200.0,
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
