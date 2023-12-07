@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/pages/my_message/my_message_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'check_messages_model.dart';
@@ -79,7 +80,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
                           obscureText: false,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              '0uie4an7' /* Email */,
+                              'p68crbs3' /* Email */,
                             ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
@@ -127,7 +128,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
                           obscureText: !_model.passwordVisibility,
                           decoration: InputDecoration(
                             labelText: FFLocalizations.of(context).getText(
-                              'ews4dmvf' /* Password */,
+                              'y5qzb580' /* Password */,
                             ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).labelMedium,
@@ -183,11 +184,26 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            await showModalBottomSheet(
+                              isScrollControlled: true,
+                              backgroundColor: Colors.transparent,
+                              enableDrag: false,
+                              context: context,
+                              builder: (context) {
+                                return Padding(
+                                  padding: MediaQuery.viewInsetsOf(context),
+                                  child: SizedBox(
+                                    height:
+                                        MediaQuery.sizeOf(context).height * 1.0,
+                                    child: const MyMessageWidget(),
+                                  ),
+                                );
+                              },
+                            ).then((value) => safeSetState(() {}));
                           },
                           text: FFLocalizations.of(context).getText(
-                            'juhen1re' /* check */,
+                            'v4cllk8w' /* check */,
                           ),
                           options: FFButtonOptions(
                             width: 200.0,
@@ -220,7 +236,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
           ),
         ),
         Align(
-          alignment: const AlignmentDirectional(0.69, -0.80),
+          alignment: const AlignmentDirectional(0.50, -0.63),
           child: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 50.0, 0.0),
             child: InkWell(

@@ -52,11 +52,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => const ProjectsWidget(),
             ),
             FFRoute(
-              name: 'HomePage2',
-              path: 'homePage2',
-              builder: (context, params) => const HomePage2Widget(),
-            ),
-            FFRoute(
               name: 'skills',
               path: 'skills',
               builder: (context, params) => const SkillsWidget(),

@@ -73,8 +73,8 @@ class _FooterWidgetState extends State<FooterWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            width: 250.0,
-                            height: 170.0,
+                            width: 300.0,
+                            height: 180.0,
                             decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -101,16 +101,6 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 color: Colors.transparent,
                                                 letterSpacing: 1.0,
                                               ),
-                                        ),
-                                      ),
-                                      ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.network(
-                                          'https://picsum.photos/seed/76/600',
-                                          width: 300.0,
-                                          height: 200.0,
-                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ],
@@ -518,6 +508,23 @@ class _FooterWidgetState extends State<FooterWidget> {
                               ],
                             ),
                           ),
+                          Container(
+                            width: 320.0,
+                            height: 230.0,
+                            decoration: const BoxDecoration(),
+                            child: Container(
+                              width: 200.0,
+                              height: 200.0,
+                              decoration: const BoxDecoration(),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'zx2maogv' /* google map */,
+                                ),
+                                style:
+                                    FlutterFlowTheme.of(context).headlineMedium,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -528,7 +535,7 @@ class _FooterWidgetState extends State<FooterWidget> {
           ),
         ),
         Align(
-          alignment: const AlignmentDirectional(0.97, -0.90),
+          alignment: const AlignmentDirectional(-0.81, 0.01),
           child: wrapWithModel(
             model: _model.socialModel,
             updateCallback: () => setState(() {}),
