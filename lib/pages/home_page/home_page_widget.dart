@@ -131,7 +131,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
           child: Container(
             width: MediaQuery.sizeOf(context).width * 1.0,
             height: MediaQuery.sizeOf(context).height * 1.0,
-            decoration: const BoxDecoration(),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: Image.asset(
+                  'assets/images/background.jpg',
+                ).image,
+              ),
+            ),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -156,169 +163,212 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             alignment: const AlignmentDirectional(-0.79, 0.00),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 0.38,
-                              height: MediaQuery.sizeOf(context).height * 0.46,
-                              decoration: const BoxDecoration(),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Align(
-                                    alignment:
-                                        const AlignmentDirectional(-1.00, 0.00),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 7.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          's22bmq9o' /* Hi,  */,
+                              height: MediaQuery.sizeOf(context).height * 0.55,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                boxShadow: const [
+                                  BoxShadow(
+                                    blurRadius: 22.0,
+                                    color: Color(0x33000000),
+                                    offset: Offset(0.0, 2.0),
+                                  )
+                                ],
+                                borderRadius: BorderRadius.circular(15.0),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    15.0, 0.0, 0.0, 0.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.00, 0.00),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 7.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            's22bmq9o' /* Hi,  */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .displayMedium
+                                              .override(
+                                                fontFamily: 'Roboto Mono',
+                                              ),
                                         ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .displayMedium
-                                            .override(
-                                              fontFamily: 'Roboto Mono',
-                                            ),
                                       ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 39.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.00, 0.00),
-                                          child: Text(
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 39.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Align(
+                                            alignment: const AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Text(
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'bcdx64uk' /* I'm  */,
+                                              ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .displayMedium
+                                                  .override(
+                                                    fontFamily: 'Roboto Mono',
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .primaryBackground,
+                                                  ),
+                                            ),
+                                          ),
+                                          Text(
                                             FFLocalizations.of(context).getText(
-                                              'bcdx64uk' /* I'm  */,
+                                              '5bfw7rwa' /* John */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .displayMedium
                                                 .override(
-                                                  fontFamily: 'Roboto Mono',
+                                                  fontFamily: 'Outfit',
+                                                  color: const Color(0xFF3176AB),
+                                                  fontWeight: FontWeight.w600,
+                                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 30.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'hxcjzum7' /* I build */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .displayMedium
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                 ),
                                           ),
                                         ),
-                                        Text(
+                                        const Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  5.0, 0.0, 7.0, 30.0),
+                                          child: SizedBox(
+                                            width: 200.0,
+                                            height: 70.0,
+                                            child:
+                                                custom_widgets.NewCustomWidget(
+                                              width: 200.0,
+                                              height: 70.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 30.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              '5wohossa' /* apps */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .displayMedium
+                                                .override(
+                                                  fontFamily: 'Outfit',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
+                                                ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(-1.00, 0.00),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 50.0),
+                                        child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '5bfw7rwa' /* John */,
+                                            '18u7yli6' /* using Flutter and Flutterflow */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .displayMedium
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: const Color(0xFF3176AB),
-                                                fontWeight: FontWeight.w600,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
                                               ),
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                  Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 30.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'hxcjzum7' /* I build */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .displayMedium,
-                                        ),
-                                      ),
-                                      const Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            5.0, 0.0, 7.0, 30.0),
-                                        child: SizedBox(
-                                          width: 200.0,
-                                          height: 70.0,
-                                          child: custom_widgets.NewCustomWidget(
-                                            width: 200.0,
-                                            height: 70.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 30.0),
-                                        child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '5wohossa' /* apps */,
-                                          ),
-                                          style: FlutterFlowTheme.of(context)
-                                              .displayMedium,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Align(
-                                    alignment:
-                                        const AlignmentDirectional(-1.00, 0.00),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 50.0),
-                                      child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '18u7yli6' /* using Flutter and Flutterflow */,
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .displayMedium,
                                       ),
                                     ),
-                                  ),
-                                  FFButtonWidget(
-                                    onPressed: () async {
-                                      _model.updatePage(() {
-                                        FFAppState().pageState = 5;
-                                      });
+                                    FFButtonWidget(
+                                      onPressed: () async {
+                                        _model.updatePage(() {
+                                          FFAppState().pageState = 5;
+                                        });
 
-                                      context.pushNamed(
-                                        'Contact',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration: Duration(milliseconds: 0),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      '3vere3tw' /* Contact Now */,
-                                    ),
-                                    icon: const FaIcon(
-                                      FontAwesomeIcons.commentAlt,
-                                    ),
-                                    options: FFButtonOptions(
-                                      width: 180.0,
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 0.0, 24.0, 0.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: const Color(0xFF0062B4),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: Colors.white,
-                                          ),
-                                      elevation: 3.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
+                                        context.pushNamed(
+                                          'Contact',
+                                          extra: <String, dynamic>{
+                                            kTransitionInfoKey: const TransitionInfo(
+                                              hasTransition: true,
+                                              transitionType:
+                                                  PageTransitionType.fade,
+                                              duration:
+                                                  Duration(milliseconds: 0),
+                                            ),
+                                          },
+                                        );
+                                      },
+                                      text: FFLocalizations.of(context).getText(
+                                        '3vere3tw' /* Contact Now */,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      icon: const FaIcon(
+                                        FontAwesomeIcons.commentAlt,
+                                      ),
+                                      options: FFButtonOptions(
+                                        width: 180.0,
+                                        height: 40.0,
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            24.0, 0.0, 24.0, 0.0),
+                                        iconPadding:
+                                            const EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: const Color(0xFF0062B4),
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color: Colors.white,
+                                            ),
+                                        elevation: 3.0,
+                                        borderSide: const BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ).animateOnPageLoad(
-                                  animationsMap['columnOnPageLoadAnimation1']!),
+                                  ],
+                                ).animateOnPageLoad(animationsMap[
+                                    'columnOnPageLoadAnimation1']!),
+                              ),
                             ),
                           ),
                           Align(
