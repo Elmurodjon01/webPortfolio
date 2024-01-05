@@ -110,7 +110,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomePage
   {
     's22bmq9o': {
-      'en': 'Hi, ',
+      'en': 'Hi',
       'ko': '안녕,',
       'ru': 'Привет,',
       'uz': 'Salom,',
@@ -151,66 +151,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Связаться сейчас',
       'uz': 'Hozir murojaat qiling',
     },
-    'a779mdpg': {
-      'en': 'Technologies I use',
-      'ko': '내가 사용하는 기술',
-      'ru': 'Технологии, которые я использую',
-      'uz': 'Men foydalanadigan texnologiyalar',
-    },
-    'w6gytho8': {
-      'en': 'Flutter',
-      'ko': '실룩 거리다',
-      'ru': 'трепетать',
-      'uz': 'Flutter',
-    },
-    'zt495e5g': {
-      'en': 'Figma',
-      'ko': '피그마',
-      'ru': 'Фигма',
-      'uz': 'Figma',
-    },
-    'jtlo36mm': {
-      'en': 'Github',
-      'ko': 'Github',
-      'ru': 'Гитхаб',
-      'uz': 'Github',
-    },
-    'wka7w34i': {
-      'en': 'FlutterFlow',
-      'ko': 'FlutterFlow',
-      'ru': 'FlutterFlow',
-      'uz': 'FlutterFlow',
-    },
-    'ktleldbm': {
-      'en': 'Firebase',
-      'ko': '중포 기지',
-      'ru': 'Огневая база',
-      'uz': 'Firebase',
-    },
-    '9ibkxh26': {
-      'en': 'Postman',
-      'ko': '우편 집배원',
-      'ru': 'Почтальон',
-      'uz': 'Pochtachi',
-    },
-    '7y3z9sjr': {
-      'en': 'Android Studio',
-      'ko': '안드로이드 스튜디오',
-      'ru': 'Android-студия',
-      'uz': 'Android Studio',
-    },
-    'es4w97xa': {
-      'en': 'VS code',
-      'ko': 'VS 코드',
-      'ru': 'VS-код',
-      'uz': 'VS kodi',
-    },
-    '3bzoa3td': {
-      'en': 'Google services',
-      'ko': '구글 서비스',
-      'ru': 'сервисы Google',
-      'uz': 'Google xizmatlari',
-    },
     'q4ysksye': {
       'en': 'I studied at',
       'ko': '나는에서 공부했다',
@@ -229,17 +169,89 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Удеми',
       'uz': 'Udemy',
     },
-    '7l9xt1zg': {
+    'pwcvoa5k': {
       'en': 'Youtube',
       'ko': '유튜브',
       'ru': 'YouTube',
       'uz': 'Youtube',
     },
-    'qta5kvnr': {
+    'zdm150go': {
       'en': 'private courses',
       'ko': '개인 코스',
       'ru': 'частные курсы',
       'uz': 'xususiy kurslar',
+    },
+    'xj50a0aq': {
+      'en': 'Go to my social',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'j88ptn1d': {
+      'en': 'Menu',
+      'ko': '메뉴',
+      'ru': 'Меню',
+      'uz': 'Menyu',
+    },
+    'oljjob0y': {
+      'en': 'Home',
+      'ko': '집',
+      'ru': 'Дом',
+      'uz': 'Uy',
+    },
+    'hrjyr6w2': {
+      'en': 'Resume',
+      'ko': '재개하다',
+      'ru': 'Резюме',
+      'uz': 'Rezyume; qayta boshlash',
+    },
+    'acqzp4w9': {
+      'en': 'Skills',
+      'ko': '기술',
+      'ru': 'Навыки',
+      'uz': 'Ko\'nikmalar',
+    },
+    'xns7cpkj': {
+      'en': 'Works',
+      'ko': '공장',
+      'ru': 'Работает',
+      'uz': 'Ishlar',
+    },
+    'xbgfd3l1': {
+      'en': 'Contact',
+      'ko': '연락하다',
+      'ru': 'Контакт',
+      'uz': 'Aloqa',
+    },
+    'zll1auwj': {
+      'en': 'Social',
+      'ko': '사회의',
+      'ru': 'Социальное',
+      'uz': 'Ijtimoiy',
+    },
+    'lpfr1rd4': {
+      'en': 'LinkedIn',
+      'ko': '링크드인',
+      'ru': 'LinkedIn',
+      'uz': 'LinkedIn',
+    },
+    'z2jmjjuz': {
+      'en': 'Github',
+      'ko': 'Github',
+      'ru': 'Гитхаб',
+      'uz': 'Github',
+    },
+    'v5l6p1uz': {
+      'en': 'Twitter',
+      'ko': '트위터',
+      'ru': 'Твиттер',
+      'uz': 'Twitter',
+    },
+    '1owyzdhb': {
+      'en': '© All rights reserved',
+      'ko': '',
+      'ru': '',
+      'uz': '',
     },
     'ocz26eti': {
       'en': 'Home',
@@ -697,6 +709,60 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': '날짜',
       'ru': 'Дата',
       'uz': 'Sana',
+    },
+  },
+  // tools
+  {
+    'x344puov': {
+      'en': 'Firebase',
+      'ko': '중포 기지',
+      'ru': 'Огневая база',
+      'uz': 'Firebase',
+    },
+    'ywmv6d1s': {
+      'en': 'Postman',
+      'ko': '우편 집배원',
+      'ru': 'Почтальон',
+      'uz': 'Pochtachi',
+    },
+    'njvka6ho': {
+      'en': 'VS code',
+      'ko': 'VS 코드',
+      'ru': 'VS-код',
+      'uz': 'VS kodi',
+    },
+    'z6z5z10q': {
+      'en': 'Google services',
+      'ko': '구글 서비스',
+      'ru': 'сервисы Google',
+      'uz': 'Google xizmatlari',
+    },
+  },
+  // toolsCopy
+  {
+    '709mzitg': {
+      'en': 'Flutter',
+      'ko': '실룩 거리다',
+      'ru': 'трепетать',
+      'uz': 'Flutter',
+    },
+    'lkk98fya': {
+      'en': 'Figma',
+      'ko': '피그마',
+      'ru': 'Фигма',
+      'uz': 'Figma',
+    },
+    'uu7qum1u': {
+      'en': 'Github',
+      'ko': 'Github',
+      'ru': 'Гитхаб',
+      'uz': 'Github',
+    },
+    'x2iorzy1': {
+      'en': 'FlutterFlow',
+      'ko': 'FlutterFlow',
+      'ru': 'FlutterFlow',
+      'uz': 'FlutterFlow',
     },
   },
   // Miscellaneous

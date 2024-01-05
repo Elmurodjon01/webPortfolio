@@ -45,7 +45,7 @@ class _FooterWidgetState extends State<FooterWidget> {
     return Stack(
       children: [
         Align(
-          alignment: const AlignmentDirectional(0.00, 0.00),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Container(
             width: MediaQuery.sizeOf(context).width * 1.0,
             height: 250.0,
@@ -67,7 +67,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                       color: Color(0xCC939292),
                     ),
                     Align(
-                      alignment: const AlignmentDirectional(0.00, 1.00),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -144,7 +144,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                               .bodyLarge
                                               .override(
                                                 fontFamily: 'Noto Serif',
-                                                color: Colors.black,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
                                                 letterSpacing: 1.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
@@ -185,7 +187,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                   fontWeight: FontWeight.w300,
                                                 ),
@@ -227,7 +231,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                 ),
                                           ),
@@ -268,7 +274,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                 ),
                                           ),
@@ -309,7 +317,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                 ),
                                           ),
@@ -347,7 +357,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Noto Serif',
-                                                color: Colors.black,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
                                                 letterSpacing: 1.0,
                                               ),
                                         ),
@@ -416,7 +428,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyLarge
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
@@ -443,7 +457,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                   fontWeight: FontWeight.w300,
                                                 ),
@@ -470,7 +486,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                 ),
                                           ),
@@ -496,7 +514,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Noto Serif',
-                                                  color: Colors.black,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryBackground,
                                                   letterSpacing: 1.0,
                                                 ),
                                           ),
@@ -520,8 +540,13 @@ class _FooterWidgetState extends State<FooterWidget> {
                                 FFLocalizations.of(context).getText(
                                   'zx2maogv' /* google map */,
                                 ),
-                                style:
-                                    FlutterFlowTheme.of(context).headlineMedium,
+                                style: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .override(
+                                      fontFamily: 'Outfit',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryBackground,
+                                    ),
                               ),
                             ),
                           ),

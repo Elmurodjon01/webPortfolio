@@ -108,7 +108,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
           child: Stack(
             children: [
               Align(
-                alignment: const AlignmentDirectional(0.00, 0.00),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -218,7 +218,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -244,7 +244,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -481,7 +481,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -507,7 +507,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -744,7 +744,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -770,7 +770,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Align(
                                                   alignment:
                                                       const AlignmentDirectional(
-                                                          -1.00, 0.00),
+                                                          -1.0, 0.0),
                                                   child: Padding(
                                                     padding:
                                                         const EdgeInsetsDirectional
@@ -932,7 +932,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                   ),
                                 ),
                                 collapsed: Align(
-                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 15.0, 0.0, 0.0),
@@ -944,7 +944,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                       ),
                                       child: Align(
                                         alignment:
-                                            const AlignmentDirectional(0.00, 0.00),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
                                             'laezp7yh' /* See More */,
@@ -1049,7 +1049,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                   Align(
                                                     alignment:
                                                         const AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -1078,7 +1078,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                   Align(
                                                     alignment:
                                                         const AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -1321,7 +1321,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                   Align(
                                                     alignment:
                                                         const AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -1350,7 +1350,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                   Align(
                                                     alignment:
                                                         const AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -1516,8 +1516,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                       ],
                                     ),
                                     Align(
-                                      alignment:
-                                          const AlignmentDirectional(0.00, 0.00),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 15.0, 0.0, 0.0),
@@ -1528,8 +1527,8 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                             color: Colors.black,
                                           ),
                                           child: Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.00, 0.00),
+                                            alignment:
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(

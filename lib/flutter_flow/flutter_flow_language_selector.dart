@@ -491,6 +491,7 @@ final Map<String, dynamic> languageToCountryInfo = {
   "fr": "fr",
   "gaa": "gh",
   "ka": "ge",
+  "kl": "gl",
   "de": "de",
   "el": "gr",
   "gu": "in",

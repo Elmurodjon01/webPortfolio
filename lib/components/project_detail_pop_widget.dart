@@ -53,7 +53,7 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
     context.watch<FFAppState>();
 
     return Align(
-      alignment: const AlignmentDirectional(0.00, 0.00),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.75,
         height: MediaQuery.sizeOf(context).height * 0.6,

@@ -152,7 +152,7 @@ class _ContactWidgetState extends State<ContactWidget>
                   child: Stack(
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(1.00, 0.00),
+                        alignment: const AlignmentDirectional(1.0, 0.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.17,
                           height: MediaQuery.sizeOf(context).height * 1.0,
@@ -163,7 +163,7 @@ class _ContactWidgetState extends State<ContactWidget>
                             animationsMap['containerOnPageLoadAnimation1']!),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(1.00, 0.00),
+                        alignment: const AlignmentDirectional(1.0, 0.0),
                         child: Container(
                           width: MediaQuery.sizeOf(context).width * 0.4,
                           height: MediaQuery.sizeOf(context).height * 0.6,
@@ -305,7 +305,7 @@ class _ContactWidgetState extends State<ContactWidget>
                           height: MediaQuery.sizeOf(context).height * 0.7,
                           decoration: const BoxDecoration(),
                           child: Align(
-                            alignment: const AlignmentDirectional(0.00, 0.00),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -515,7 +515,7 @@ class _ContactWidgetState extends State<ContactWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       await EmailRecord.collection

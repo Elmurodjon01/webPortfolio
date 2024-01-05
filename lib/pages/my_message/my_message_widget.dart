@@ -43,7 +43,7 @@ class _MyMessageWidgetState extends State<MyMessageWidget> {
     return Stack(
       children: [
         Align(
-          alignment: const AlignmentDirectional(0.00, 0.00),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Container(
             width: MediaQuery.sizeOf(context).width * 0.5,
             height: MediaQuery.sizeOf(context).height * 0.6,
@@ -58,7 +58,7 @@ class _MyMessageWidgetState extends State<MyMessageWidget> {
                   width: MediaQuery.sizeOf(context).width * 0.45,
                   height: MediaQuery.sizeOf(context).height * 0.5,
                   decoration: const BoxDecoration(),
-                  alignment: const AlignmentDirectional(0.00, 0.00),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: ListView(
                     padding: EdgeInsets.zero,
                     scrollDirection: Axis.vertical,

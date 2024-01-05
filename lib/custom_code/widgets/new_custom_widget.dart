@@ -35,7 +35,7 @@ class _NewCustomWidgetState extends State<NewCustomWidget> {
         const SizedBox(width: 20),
         DefaultTextStyle(
           style: const TextStyle(
-            fontSize: 47.0,
+            fontSize: 24.0,
             fontFamily: 'Horizon',
             color: Colors.black,
             fontWeight: FontWeight.w600,

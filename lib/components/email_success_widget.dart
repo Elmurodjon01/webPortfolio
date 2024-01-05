@@ -47,7 +47,7 @@ class _EmailSuccessWidgetState extends State<EmailSuccessWidget> {
     context.watch<FFAppState>();
 
     return Align(
-      alignment: const AlignmentDirectional(-0.10, -0.29),
+      alignment: const AlignmentDirectional(-0.1, -0.29),
       child: Container(
         width: MediaQuery.sizeOf(context).width * 0.28,
         height: MediaQuery.sizeOf(context).height * 0.35,
@@ -55,13 +55,13 @@ class _EmailSuccessWidgetState extends State<EmailSuccessWidget> {
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: BorderRadius.circular(15.0),
         ),
-        alignment: const AlignmentDirectional(0.00, 0.00),
+        alignment: const AlignmentDirectional(0.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Align(
-              alignment: const AlignmentDirectional(1.00, 0.00),
+              alignment: const AlignmentDirectional(1.0, 0.0),
               child: Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 15.0, 0.0),
                 child: InkWell(
@@ -81,7 +81,7 @@ class _EmailSuccessWidgetState extends State<EmailSuccessWidget> {
               ),
             ),
             Align(
-              alignment: const AlignmentDirectional(0.00, 0.00),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Text(
                 widget.message!,
                 style: FlutterFlowTheme.of(context).titleLarge.override(

@@ -57,12 +57,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
               ),
               style: FlutterFlowTheme.of(context).headlineLarge.override(
                     fontFamily: 'Outfit',
+                    color: FlutterFlowTheme.of(context).primaryBackground,
                     fontSize: 25.0,
                   ),
             ),
           ),
           Align(
-            alignment: const AlignmentDirectional(0.00, 0.00),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 50.0, 0.0),
               child: Container(
@@ -126,9 +127,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: _model.mouseRegionHovered1 == true
-                                          ? const Color(0xFF068DE2)
-                                          : Colors.black,
+                                      color: valueOrDefault<Color>(
+                                        _model.mouseRegionHovered1 == true
+                                            ? const Color(0xFF068DE2)
+                                            : FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                        FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                      ),
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -200,9 +206,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: FFAppState().aboutColor
-                                          ? const Color(0xFF068DE2)
-                                          : Colors.black,
+                                      color: valueOrDefault<Color>(
+                                        FFAppState().aboutColor
+                                            ? const Color(0xFF068DE2)
+                                            : FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                        FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                      ),
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -274,9 +285,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: FFAppState().skillsColor
-                                          ? const Color(0xFF068DE2)
-                                          : Colors.black,
+                                      color: valueOrDefault<Color>(
+                                        FFAppState().skillsColor
+                                            ? const Color(0xFF068DE2)
+                                            : FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                        FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                      ),
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -348,9 +364,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: FFAppState().projectsColor
-                                          ? const Color(0xFF068DE2)
-                                          : Colors.black,
+                                      color: valueOrDefault<Color>(
+                                        FFAppState().projectsColor
+                                            ? const Color(0xFF068DE2)
+                                            : FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                        FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                      ),
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -421,9 +442,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                                     .headlineMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: FFAppState().contactColor
-                                          ? const Color(0xFF068DE2)
-                                          : Colors.black,
+                                      color: valueOrDefault<Color>(
+                                        FFAppState().contactColor
+                                            ? const Color(0xFF068DE2)
+                                            : FlutterFlowTheme.of(context)
+                                                .primaryBackground,
+                                        FlutterFlowTheme.of(context)
+                                            .primaryBackground,
+                                      ),
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -443,15 +469,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                     ),
                     FlutterFlowLanguageSelector(
                       width: 150.0,
-                      backgroundColor:
-                          FlutterFlowTheme.of(context).primaryBackground,
                       borderColor: Colors.transparent,
-                      dropdownColor:
+                      dropdownColor: const Color(0x00000000),
+                      dropdownIconColor:
                           FlutterFlowTheme.of(context).primaryBackground,
-                      dropdownIconColor: Colors.black,
                       borderRadius: 8.0,
-                      textStyle: const TextStyle(
-                        color: Colors.black,
+                      textStyle: TextStyle(
+                        color: FlutterFlowTheme.of(context).primaryBackground,
                         fontWeight: FontWeight.normal,
                         fontSize: 18.0,
                       ),

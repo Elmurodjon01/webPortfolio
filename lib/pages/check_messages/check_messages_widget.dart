@@ -51,7 +51,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
     return Stack(
       children: [
         Align(
-          alignment: const AlignmentDirectional(0.00, 0.00),
+          alignment: const AlignmentDirectional(0.0, 0.0),
           child: Container(
             width: MediaQuery.sizeOf(context).width * 0.5,
             height: MediaQuery.sizeOf(context).height * 0.6,
@@ -66,7 +66,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
                   width: MediaQuery.sizeOf(context).width * 0.28,
                   height: MediaQuery.sizeOf(context).height * 0.5,
                   decoration: const BoxDecoration(),
-                  alignment: const AlignmentDirectional(0.00, 0.00),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -236,7 +236,7 @@ class _CheckMessagesWidgetState extends State<CheckMessagesWidget> {
           ),
         ),
         Align(
-          alignment: const AlignmentDirectional(0.50, -0.63),
+          alignment: const AlignmentDirectional(0.5, -0.63),
           child: Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 50.0, 0.0),
             child: InkWell(
