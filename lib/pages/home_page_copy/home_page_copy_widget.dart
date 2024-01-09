@@ -13,7 +13,6 @@ import '/pages/tools_copy/tools_copy_widget.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -79,14 +78,6 @@ class _HomePageCopyWidgetState extends State<HomePageCopyWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => HomePageCopyModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      if (scaffoldKey.currentState!.isDrawerOpen ||
-          scaffoldKey.currentState!.isEndDrawerOpen) {
-        Navigator.pop(context);
-      }
-    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }

@@ -9,7 +9,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
@@ -134,11 +133,6 @@ class _SkillsWidgetState extends State<SkillsWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => SkillsModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      Navigator.pop(context);
-    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }

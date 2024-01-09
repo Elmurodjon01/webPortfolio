@@ -10,7 +10,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -74,11 +73,6 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => ProjectsModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      Navigator.pop(context);
-    });
 
     _model.expandableController = ExpandableController(initialExpanded: false);
 
