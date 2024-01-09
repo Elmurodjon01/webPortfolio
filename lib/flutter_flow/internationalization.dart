@@ -331,6 +331,96 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Отправлять',
       'uz': 'Yuborish',
     },
+    'mbk3g2xd': {
+      'en': 'Info',
+      'ko': '정보',
+      'ru': 'Информация',
+      'uz': 'Ma\'lumot',
+    },
+    's7n8kxzw': {
+      'en': 'abdulajonov01@gmail.com',
+      'ko': 'abdulajonov01@gmail.com',
+      'ru': 'abdulajonov01@gmail.com',
+      'uz': 'abdulajonov01@gmail.com',
+    },
+    'ky55mdfr': {
+      'en': '+821023501311',
+      'ko': '+821023501311',
+      'ru': '+821023501311',
+      'uz': '+821023501311',
+    },
+    'pbkq0but': {
+      'en': 'South Korea, Incheon',
+      'ko': '한국, 인천',
+      'ru': 'Южная Корея, Инчхон',
+      'uz': 'Janubiy Koreya, Incheon',
+    },
+    '3i6kij5u': {
+      'en': '22221',
+      'ko': '22221',
+      'ru': '22221',
+      'uz': '22221',
+    },
+    '9hgn2eun': {
+      'en': 'Info',
+      'ko': '정보',
+      'ru': 'Информация',
+      'uz': 'Ma\'lumot',
+    },
+    '0b12ubw8': {
+      'en': 'abdulajonov01@gmail.com',
+      'ko': 'abdulajonov01@gmail.com',
+      'ru': 'abdulajonov01@gmail.com',
+      'uz': 'abdulajonov01@gmail.com',
+    },
+    'b236u9m4': {
+      'en': '+821023501311',
+      'ko': '+821023501311',
+      'ru': '+821023501311',
+      'uz': '+821023501311',
+    },
+    'k2hm1iv0': {
+      'en': 'South Korea, Incheon',
+      'ko': '한국, 인천',
+      'ru': 'Южная Корея, Инчхон',
+      'uz': 'Janubiy Koreya, Incheon',
+    },
+    '6mkfdk39': {
+      'en': '22221',
+      'ko': '22221',
+      'ru': '22221',
+      'uz': '22221',
+    },
+    'qb9cssf0': {
+      'en': 'Info',
+      'ko': '정보',
+      'ru': 'Информация',
+      'uz': 'Ma\'lumot',
+    },
+    'wyl8lyhd': {
+      'en': 'abdulajonov01@gmail.com',
+      'ko': 'abdulajonov01@gmail.com',
+      'ru': 'abdulajonov01@gmail.com',
+      'uz': 'abdulajonov01@gmail.com',
+    },
+    'jngpwhnd': {
+      'en': '+821023501311',
+      'ko': '+821023501311',
+      'ru': '+821023501311',
+      'uz': '+821023501311',
+    },
+    'h7azr204': {
+      'en': 'South Korea, Incheon',
+      'ko': '한국, 인천',
+      'ru': 'Южная Корея, Инчхон',
+      'uz': 'Janubiy Koreya, Incheon',
+    },
+    'cc8jrx33': {
+      'en': '22221',
+      'ko': '22221',
+      'ru': '22221',
+      'uz': '22221',
+    },
     '536trm01': {
       'en': 'Home',
       'ko': '집',
@@ -352,25 +442,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Описание продукта',
       'uz': 'Mahsulot tavsifi',
     },
-    'cm269awp': {
+    'e07p449j': {
       'en': 'Listening App',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
     },
-    '2od93f3i': {
+    '1qqo7ptl': {
       'en': 'Prodect description',
       'ko': '제품 설명',
       'ru': 'Описание продукта',
       'uz': 'Mahsulot tavsifi',
     },
-    'rcpw3iw3': {
+    'a9ul37lh': {
       'en': 'Listening App',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
     },
-    'vcjnvw5g': {
+    'hxki31x4': {
       'en': 'Prodect description',
       'ko': '제품 설명',
       'ru': 'Описание продукта',
@@ -382,25 +472,37 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Узнать больше',
       'uz': 'Batafsil',
     },
-    'o2erv9a2': {
+    'ifmxrk5i': {
       'en': 'Listening App',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
     },
-    'aqj57s53': {
+    't1z5rr7z': {
       'en': 'Prodect description',
       'ko': '제품 설명',
       'ru': 'Описание продукта',
       'uz': 'Mahsulot tavsifi',
     },
-    'gtu96u0c': {
+    'z8a9t2uk': {
       'en': 'Listening App',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
     },
-    'a6agur1e': {
+    'gvy7e3te': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'pr99jxa6': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'x1asadoq': {
       'en': 'Prodect description',
       'ko': '제품 설명',
       'ru': 'Описание продукта',
@@ -527,6 +629,90 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Узбекский',
       'uz': 'o\'zbek',
     },
+    '8dvt80cz': {
+      'en': '70%',
+      'ko': '70%',
+      'ru': '70%',
+      'uz': '70%',
+    },
+    'iqqk7tco': {
+      'en': 'Flutter',
+      'ko': '실룩 거리다',
+      'ru': 'трепетать',
+      'uz': 'Flutter',
+    },
+    'pycwhfyw': {
+      'en': '60%',
+      'ko': '60%',
+      'ru': '60%',
+      'uz': '60%',
+    },
+    '914ca91w': {
+      'en': 'Flutterflow',
+      'ko': '플러터플로우',
+      'ru': 'трепещущий поток',
+      'uz': 'Flutterflow',
+    },
+    'dg7xrpb4': {
+      'en': '70%',
+      'ko': '70%',
+      'ru': '70%',
+      'uz': '70%',
+    },
+    '4v5zk06y': {
+      'en': 'Firebase',
+      'ko': '중포 기지',
+      'ru': 'Огневая база',
+      'uz': 'Firebase',
+    },
+    'ovdpr11u': {
+      'en': '70%',
+      'ko': '70%',
+      'ru': '70%',
+      'uz': '70%',
+    },
+    'ltb7o2c4': {
+      'en': 'Github',
+      'ko': 'Github',
+      'ru': 'Гитхаб',
+      'uz': 'Github',
+    },
+    '65eukodj': {
+      'en': '80%',
+      'ko': '80%',
+      'ru': '80%',
+      'uz': '80%',
+    },
+    'p9b3fsg1': {
+      'en': 'English',
+      'ko': '영어',
+      'ru': 'Английский',
+      'uz': 'Ingliz',
+    },
+    'n1g4c701': {
+      'en': '50%',
+      'ko': '50%',
+      'ru': '50%',
+      'uz': '50%',
+    },
+    '3kz3ut9q': {
+      'en': 'Korean',
+      'ko': '한국인',
+      'ru': 'Корейский',
+      'uz': 'koreys',
+    },
+    'vhhsk12o': {
+      'en': '100%',
+      'ko': '100%',
+      'ru': '100%',
+      'uz': '100%',
+    },
+    'aiye2l4y': {
+      'en': 'Uzbek',
+      'ko': '우즈벡어',
+      'ru': 'Узбекский',
+      'uz': 'o\'zbek',
+    },
     'ab0okjwf': {
       'en': 'Home',
       'ko': '집',
@@ -543,6 +729,87 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Yuklab olish',
     },
     'os9nf002': {
+      'en': 'Home',
+      'ko': '집',
+      'ru': 'Дом',
+      'uz': 'Uy',
+    },
+  },
+  // HomePageCopy
+  {
+    'qv2mj0n1': {
+      'en': 'Hi',
+      'ko': '안녕,',
+      'ru': 'Привет,',
+      'uz': 'Salom,',
+    },
+    '6sbad2hz': {
+      'en': 'I\'m ',
+      'ko': '나는',
+      'ru': 'Я',
+      'uz': 'men',
+    },
+    '44stur4t': {
+      'en': 'John',
+      'ko': '남자',
+      'ru': 'Джон',
+      'uz': 'Jon',
+    },
+    'j5fele5s': {
+      'en': 'I build',
+      'ko': '나는 짓는다',
+      'ru': 'я строю',
+      'uz': 'quraman',
+    },
+    'tygarog1': {
+      'en': 'apps',
+      'ko': '앱',
+      'ru': 'Программы',
+      'uz': 'ilovalar',
+    },
+    '28sxf0mr': {
+      'en': 'using Flutter and Flutterflow',
+      'ko': 'Flutter와 Flutterflow를 사용하여',
+      'ru': 'использование Flutter и Flutterflow',
+      'uz': 'Flutter va Flutterflow yordamida',
+    },
+    '8cki0zeb': {
+      'en': 'Contact Now',
+      'ko': '지금 연락하세요',
+      'ru': 'Связаться сейчас',
+      'uz': 'Hozir murojaat qiling',
+    },
+    'w6kqgv12': {
+      'en': 'I studied at',
+      'ko': '나는에서 공부했다',
+      'ru': 'я учился в',
+      'uz': 'da oʻqiganman',
+    },
+    'z1lepzwp': {
+      'en': 'University',
+      'ko': '대학교',
+      'ru': 'Университет',
+      'uz': 'Universitet',
+    },
+    '2g648xs4': {
+      'en': 'Udemy',
+      'ko': '유데미',
+      'ru': 'Удеми',
+      'uz': 'Udemy',
+    },
+    '6y1v6apw': {
+      'en': 'Youtube',
+      'ko': '유튜브',
+      'ru': 'YouTube',
+      'uz': 'Youtube',
+    },
+    '276aq929': {
+      'en': 'private courses',
+      'ko': '개인 코스',
+      'ru': 'частные курсы',
+      'uz': 'xususiy kurslar',
+    },
+    'hak7c33q': {
       'en': 'Home',
       'ko': '집',
       'ru': 'Дом',
@@ -763,6 +1030,93 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': 'FlutterFlow',
       'ru': 'FlutterFlow',
       'uz': 'FlutterFlow',
+    },
+  },
+  // mobileFooter
+  {
+    'c70m88k0': {
+      'en': 'Menu',
+      'ko': '메뉴',
+      'ru': 'Меню',
+      'uz': 'Menyu',
+    },
+    'v1cvvoa0': {
+      'en': 'Home',
+      'ko': '집',
+      'ru': 'Дом',
+      'uz': 'Uy',
+    },
+    '46ntohg1': {
+      'en': 'Resume',
+      'ko': '재개하다',
+      'ru': 'Резюме',
+      'uz': 'Rezyume; qayta boshlash',
+    },
+    '4zy0hysg': {
+      'en': 'Skills',
+      'ko': '기술',
+      'ru': 'Навыки',
+      'uz': 'Ko\'nikmalar',
+    },
+    '583x1ulm': {
+      'en': 'Works',
+      'ko': '공장',
+      'ru': 'Работает',
+      'uz': 'Ishlar',
+    },
+    'e98qhqts': {
+      'en': 'Contact',
+      'ko': '연락하다',
+      'ru': 'Контакт',
+      'uz': 'Aloqa',
+    },
+    'v4bl1643': {
+      'en': '© All rights reserved',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+  },
+  // mobileSocial
+  {
+    'n1zhnz3u': {
+      'en': 'Go to my social',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+  },
+  // drawer
+  {
+    'lavwawkc': {
+      'en': 'Home',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'a1o2qti1': {
+      'en': 'Resume',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    '0o78thds': {
+      'en': 'Skills',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'f6fe2fl3': {
+      'en': 'Works',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    '0n64dyia': {
+      'en': 'Contact',
+      'ko': '',
+      'ru': '',
+      'uz': '',
     },
   },
   // Miscellaneous

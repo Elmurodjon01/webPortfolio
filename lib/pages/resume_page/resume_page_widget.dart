@@ -1,5 +1,7 @@
+import '/components/drawer_widget.dart';
 import '/components/footer_widget.dart';
 import '/components/header_widget.dart';
+import '/components/mobile_menu_widget.dart';
 import '/components/small_pop_up_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_pdf_viewer.dart';
@@ -7,6 +9,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
@@ -46,6 +49,11 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
     super.initState();
     _model = createModel(context, () => ResumePageModel());
 
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      Navigator.pop(context);
+    });
+
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
@@ -76,48 +84,78 @@ class _ResumePageWidgetState extends State<ResumePageWidget>
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        drawer: Drawer(
+          elevation: 16.0,
+          child: wrapWithModel(
+            model: _model.drawerModel,
+            updateCallback: () => setState(() {}),
+            child: const DrawerWidget(),
+          ),
+        ),
         body: SafeArea(
           top: true,
           child: Stack(
             children: [
-              SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    wrapWithModel(
-                      model: _model.headerModel,
-                      updateCallback: () => setState(() {}),
-                      child: const HeaderWidget(),
-                    ).animateOnPageLoad(
-                        animationsMap['headerOnPageLoadAnimation']!),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-                      child: Container(
-                        width: MediaQuery.sizeOf(context).width * 0.8,
-                        height: MediaQuery.sizeOf(context).height * 1.0,
-                        decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
+              Container(
+                width: MediaQuery.sizeOf(context).width * 1.0,
+                height: MediaQuery.sizeOf(context).height * 1.0,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      FlutterFlowTheme.of(context).primaryText,
+                      const Color(0xD9000000)
+                    ],
+                    stops: const [0.0, 1.0],
+                    begin: const AlignmentDirectional(0.0, -1.0),
+                    end: const AlignmentDirectional(0, 1.0),
+                  ),
+                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      if (MediaQuery.sizeOf(context).width > 500.0)
+                        wrapWithModel(
+                          model: _model.headerModel,
+                          updateCallback: () => setState(() {}),
+                          child: const HeaderWidget(),
+                        ).animateOnPageLoad(
+                            animationsMap['headerOnPageLoadAnimation']!),
+                      if (MediaQuery.sizeOf(context).width < 500.0)
+                        wrapWithModel(
+                          model: _model.mobileMenuModel,
+                          updateCallback: () => setState(() {}),
+                          child: const MobileMenuWidget(),
                         ),
-                        child: const FlutterFlowPdfViewer(
-                          assetPath: 'assets/pdfs/Resumenew.pdf',
-                          height: 300.0,
-                          horizontalScroll: false,
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                        child: Container(
+                          width: MediaQuery.sizeOf(context).width * 0.8,
+                          height: MediaQuery.sizeOf(context).height * 1.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                          ),
+                          child: const FlutterFlowPdfViewer(
+                            assetPath: 'assets/pdfs/Resumenew.pdf',
+                            height: 200.0,
+                            horizontalScroll: false,
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 150.0, 0.0, 0.0),
-                      child: wrapWithModel(
-                        model: _model.footerModel,
-                        updateCallback: () => setState(() {}),
-                        child: const FooterWidget(),
+                      Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            0.0, 150.0, 0.0, 0.0),
+                        child: wrapWithModel(
+                          model: _model.footerModel,
+                          updateCallback: () => setState(() {}),
+                          child: const FooterWidget(),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Align(

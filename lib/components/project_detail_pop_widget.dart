@@ -93,8 +93,6 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.2,
-                      height: MediaQuery.sizeOf(context).height * 0.45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
@@ -102,8 +100,40 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
                           widget.image1!,
-                          width: 300.0,
-                          height: 200.0,
+                          width: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 170.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 270.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 300.0;
+                              } else {
+                                return 170.0;
+                              }
+                            }(),
+                            170.0,
+                          ),
+                          height: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 300.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 450.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 500.0;
+                              } else {
+                                return 300.0;
+                              }
+                            }(),
+                            300.0,
+                          ),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -113,17 +143,47 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.2,
-                      height: MediaQuery.sizeOf(context).height * 0.45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          widget.image2!,
-                          width: 300.0,
-                          height: 200.0,
+                          widget.image1!,
+                          width: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 170.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 270.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 300.0;
+                              } else {
+                                return 170.0;
+                              }
+                            }(),
+                            170.0,
+                          ),
+                          height: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 300.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 450.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 500.0;
+                              } else {
+                                return 300.0;
+                              }
+                            }(),
+                            300.0,
+                          ),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -133,17 +193,47 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.2,
-                      height: MediaQuery.sizeOf(context).height * 0.45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          widget.image3!,
-                          width: 300.0,
-                          height: 200.0,
+                          widget.image1!,
+                          width: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 170.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 270.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 300.0;
+                              } else {
+                                return 170.0;
+                              }
+                            }(),
+                            170.0,
+                          ),
+                          height: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 300.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 450.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 500.0;
+                              } else {
+                                return 300.0;
+                              }
+                            }(),
+                            300.0,
+                          ),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -153,17 +243,47 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.2,
-                      height: MediaQuery.sizeOf(context).height * 0.45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          widget.image4!,
-                          width: 300.0,
-                          height: 200.0,
+                          widget.image1!,
+                          width: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 170.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 270.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 300.0;
+                              } else {
+                                return 170.0;
+                              }
+                            }(),
+                            170.0,
+                          ),
+                          height: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 300.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 450.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 500.0;
+                              } else {
+                                return 300.0;
+                              }
+                            }(),
+                            300.0,
+                          ),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -173,17 +293,47 @@ class _ProjectDetailPopWidgetState extends State<ProjectDetailPopWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                     child: Container(
-                      width: MediaQuery.sizeOf(context).width * 0.2,
-                      height: MediaQuery.sizeOf(context).height * 0.45,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          widget.image5!,
-                          width: 300.0,
-                          height: 200.0,
+                          widget.image1!,
+                          width: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 170.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 270.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 300.0;
+                              } else {
+                                return 170.0;
+                              }
+                            }(),
+                            170.0,
+                          ),
+                          height: valueOrDefault<double>(
+                            () {
+                              if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointSmall) {
+                                return 300.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointMedium) {
+                                return 450.0;
+                              } else if (MediaQuery.sizeOf(context).width <
+                                  kBreakpointLarge) {
+                                return 500.0;
+                              } else {
+                                return 300.0;
+                              }
+                            }(),
+                            300.0,
+                          ),
                           fit: BoxFit.contain,
                         ),
                       ),

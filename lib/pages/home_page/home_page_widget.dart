@@ -130,14 +130,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  if (isWeb == true)
+                  if (MediaQuery.sizeOf(context).width > 500.0)
                     wrapWithModel(
                       model: _model.headerModel,
                       updateCallback: () => setState(() {}),
                       child: const HeaderWidget(),
                     ).animateOnPageLoad(
                         animationsMap['headerOnPageLoadAnimation']!),
-                  if (isWeb == false)
+                  if (MediaQuery.sizeOf(context).width < 500.0)
                     Container(
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: 65.0,
@@ -480,6 +480,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     width: 1.0,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
+                                  hoverColor:
+                                      FlutterFlowTheme.of(context).warning,
                                 ),
                               ),
                             ),
@@ -508,26 +510,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                GradientText(
-                                  FFLocalizations.of(context).getText(
-                                    'q4ysksye' /* I studied at */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .headlineMedium
-                                      .override(
-                                        fontFamily: 'Roboto Mono',
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                  colors: [
-                                    FlutterFlowTheme.of(context).secondary,
-                                    FlutterFlowTheme.of(context)
-                                        .primaryBackground
-                                  ],
-                                  gradientDirection: GradientDirection.ltr,
-                                  gradientType: GradientType.linear,
-                                ),
                                 Align(
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
@@ -539,6 +521,29 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
+                                        GradientText(
+                                          FFLocalizations.of(context).getText(
+                                            'q4ysksye' /* I studied at */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .headlineMedium
+                                              .override(
+                                                fontFamily: 'Roboto Mono',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryBackground,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                          colors: [
+                                            FlutterFlowTheme.of(context)
+                                                .secondary,
+                                            FlutterFlowTheme.of(context)
+                                                .primaryBackground
+                                          ],
+                                          gradientDirection:
+                                              GradientDirection.ltr,
+                                          gradientType: GradientType.linear,
+                                        ),
                                         Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
@@ -751,7 +756,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ],
                     ),
                   ),
-                  if (isWeb == true)
+                  if (MediaQuery.sizeOf(context).width > 500.0)
                     Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 10.0),
@@ -761,7 +766,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         child: const FooterWidget(),
                       ),
                     ),
-                  if ((isAndroid == true) || (isiOS == true))
+                  if (MediaQuery.sizeOf(context).width < 500.0)
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -796,7 +801,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ],
                     ),
-                  if ((isAndroid == true) || (isiOS == true))
+                  if (MediaQuery.sizeOf(context).width < 500.0)
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
