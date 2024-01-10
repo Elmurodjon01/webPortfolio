@@ -157,8 +157,8 @@ class _ProjectDetailPopCopyCopyWidgetState
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
-                        child: Image.asset(
-                          'assets/images/storeInvoiceLogo.png.png',
+                        child: Image.network(
+                          containerProjectsJRecord.icon,
                           fit: BoxFit.cover,
                         ),
                       ),

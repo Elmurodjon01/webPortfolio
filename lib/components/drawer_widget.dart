@@ -193,7 +193,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed('Projects');
+                    context.pushNamed('ProjectsCopy');
                   },
                   child: Row(
                     mainAxisSize: MainAxisSize.max,

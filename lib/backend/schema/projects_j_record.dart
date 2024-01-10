@@ -29,10 +29,16 @@ class ProjectsJRecord extends FirestoreRecord {
   String get info => _info ?? '';
   bool hasInfo() => _info != null;
 
+  // "icon" field.
+  String? _icon;
+  String get icon => _icon ?? '';
+  bool hasIcon() => _icon != null;
+
   void _initializeFields() {
     _projectName = snapshotData['ProjectName'] as String?;
     _images = getDataList(snapshotData['images']);
     _info = snapshotData['info'] as String?;
+    _icon = snapshotData['icon'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -72,11 +78,13 @@ class ProjectsJRecord extends FirestoreRecord {
 Map<String, dynamic> createProjectsJRecordData({
   String? projectName,
   String? info,
+  String? icon,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'ProjectName': projectName,
       'info': info,
+      'icon': icon,
     }.withoutNulls,
   );
 
@@ -91,12 +99,13 @@ class ProjectsJRecordDocumentEquality implements Equality<ProjectsJRecord> {
     const listEquality = ListEquality();
     return e1?.projectName == e2?.projectName &&
         listEquality.equals(e1?.images, e2?.images) &&
-        e1?.info == e2?.info;
+        e1?.info == e2?.info &&
+        e1?.icon == e2?.icon;
   }
 
   @override
   int hash(ProjectsJRecord? e) =>
-      const ListEquality().hash([e?.projectName, e?.images, e?.info]);
+      const ListEquality().hash([e?.projectName, e?.images, e?.info, e?.icon]);
 
   @override
   bool isValidKey(Object? o) => o is ProjectsJRecord;

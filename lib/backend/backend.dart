@@ -5,7 +5,6 @@ import 'schema/util/firestore_util.dart';
 import 'schema/email_record.dart';
 import 'schema/listening_app_record.dart';
 import 'schema/anotherapp_record.dart';
-import 'schema/projects_record.dart';
 import 'schema/projects_j_record.dart';
 
 export 'dart:async' show StreamSubscription;
@@ -17,7 +16,6 @@ export 'schema/util/schema_util.dart';
 export 'schema/email_record.dart';
 export 'schema/listening_app_record.dart';
 export 'schema/anotherapp_record.dart';
-export 'schema/projects_record.dart';
 export 'schema/projects_j_record.dart';
 
 /// Functions to query EmailRecords (as a Stream and as a Future).
@@ -126,43 +124,6 @@ Future<List<AnotherappRecord>> queryAnotherappRecordOnce({
     queryCollectionOnce(
       AnotherappRecord.collection,
       AnotherappRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-/// Functions to query ProjectsRecords (as a Stream and as a Future).
-Future<int> queryProjectsRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      ProjectsRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<ProjectsRecord>> queryProjectsRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      ProjectsRecord.collection,
-      ProjectsRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<ProjectsRecord>> queryProjectsRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      ProjectsRecord.collection,
-      ProjectsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
