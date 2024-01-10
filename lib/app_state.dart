@@ -63,6 +63,12 @@ class FFAppState extends ChangeNotifier {
   set contactColor(bool value) {
     _contactColor = value;
   }
+
+  int _portfolioIndex = 0;
+  int get portfolioIndex => _portfolioIndex;
+  set portfolioIndex(int value) {
+    _portfolioIndex = value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

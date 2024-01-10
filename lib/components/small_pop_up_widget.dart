@@ -48,8 +48,8 @@ class _SmallPopUpWidgetState extends State<SmallPopUpWidget> {
     return Align(
       alignment: const AlignmentDirectional(-0.1, -0.29),
       child: Container(
-        width: MediaQuery.sizeOf(context).width * 0.28,
-        height: MediaQuery.sizeOf(context).height * 0.35,
+        width: MediaQuery.sizeOf(context).width * 0.25,
+        height: MediaQuery.sizeOf(context).height * 0.25,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: BorderRadius.circular(15.0),

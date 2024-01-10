@@ -3,6 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'schema/util/firestore_util.dart';
 
 import 'schema/email_record.dart';
+import 'schema/listening_app_record.dart';
+import 'schema/anotherapp_record.dart';
+import 'schema/projects_record.dart';
+import 'schema/projects_j_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -11,6 +15,10 @@ export 'schema/util/firestore_util.dart';
 export 'schema/util/schema_util.dart';
 
 export 'schema/email_record.dart';
+export 'schema/listening_app_record.dart';
+export 'schema/anotherapp_record.dart';
+export 'schema/projects_record.dart';
+export 'schema/projects_j_record.dart';
 
 /// Functions to query EmailRecords (as a Stream and as a Future).
 Future<int> queryEmailRecordCount({
@@ -44,6 +52,154 @@ Future<List<EmailRecord>> queryEmailRecordOnce({
     queryCollectionOnce(
       EmailRecord.collection,
       EmailRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query ListeningAppRecords (as a Stream and as a Future).
+Future<int> queryListeningAppRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      ListeningAppRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<ListeningAppRecord>> queryListeningAppRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      ListeningAppRecord.collection,
+      ListeningAppRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<ListeningAppRecord>> queryListeningAppRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      ListeningAppRecord.collection,
+      ListeningAppRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query AnotherappRecords (as a Stream and as a Future).
+Future<int> queryAnotherappRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      AnotherappRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<AnotherappRecord>> queryAnotherappRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      AnotherappRecord.collection,
+      AnotherappRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<AnotherappRecord>> queryAnotherappRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      AnotherappRecord.collection,
+      AnotherappRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query ProjectsRecords (as a Stream and as a Future).
+Future<int> queryProjectsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      ProjectsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<ProjectsRecord>> queryProjectsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      ProjectsRecord.collection,
+      ProjectsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<ProjectsRecord>> queryProjectsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      ProjectsRecord.collection,
+      ProjectsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query ProjectsJRecords (as a Stream and as a Future).
+Future<int> queryProjectsJRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      ProjectsJRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<ProjectsJRecord>> queryProjectsJRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      ProjectsJRecord.collection,
+      ProjectsJRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<ProjectsJRecord>> queryProjectsJRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      ProjectsJRecord.collection,
+      ProjectsJRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

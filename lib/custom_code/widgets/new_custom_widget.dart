@@ -1,5 +1,6 @@
 // Automatic FlutterFlow imports
 import '/backend/backend.dart';
+import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'index.dart'; // Imports other custom widgets
@@ -11,11 +12,10 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 
 class NewCustomWidget extends StatefulWidget {
   const NewCustomWidget({
-    Key? key,
     this.width,
     this.height,
     this.animatingText,
-  }) : super(key: key);
+  });
 
   final double? width;
   final double? height;
@@ -37,7 +37,7 @@ class _NewCustomWidgetState extends State<NewCustomWidget> {
           style: const TextStyle(
             fontSize: 16.0,
             fontFamily: 'Horizon',
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
           ),
           child: AnimatedTextKit(

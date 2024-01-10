@@ -3,7 +3,6 @@ import '/components/footer_widget.dart';
 import '/components/header_widget.dart';
 import '/components/mobile_footer_widget.dart';
 import '/components/mobile_menu_widget.dart';
-import '/components/mobile_social_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'skills_widget.dart' show SkillsWidget;
 import 'package:flutter/material.dart';
@@ -18,8 +17,6 @@ class SkillsModel extends FlutterFlowModel<SkillsWidget> {
   late MobileMenuModel mobileMenuModel;
   // Model for footer component.
   late FooterModel footerModel;
-  // Model for mobileSocial component.
-  late MobileSocialModel mobileSocialModel;
   // Model for mobileFooter component.
   late MobileFooterModel mobileFooterModel;
   // Model for drawer component.
@@ -32,7 +29,6 @@ class SkillsModel extends FlutterFlowModel<SkillsWidget> {
     headerModel = createModel(context, () => HeaderModel());
     mobileMenuModel = createModel(context, () => MobileMenuModel());
     footerModel = createModel(context, () => FooterModel());
-    mobileSocialModel = createModel(context, () => MobileSocialModel());
     mobileFooterModel = createModel(context, () => MobileFooterModel());
     drawerModel = createModel(context, () => DrawerModel());
   }
@@ -43,7 +39,6 @@ class SkillsModel extends FlutterFlowModel<SkillsWidget> {
     headerModel.dispose();
     mobileMenuModel.dispose();
     footerModel.dispose();
-    mobileSocialModel.dispose();
     mobileFooterModel.dispose();
     drawerModel.dispose();
   }

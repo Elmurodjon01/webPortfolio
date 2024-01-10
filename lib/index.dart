@@ -6,3 +6,5 @@ export '/pages/skills/skills_widget.dart' show SkillsWidget;
 export '/pages/resume_page/resume_page_widget.dart' show ResumePageWidget;
 export '/pages/home_page_copy/home_page_copy_widget.dart'
     show HomePageCopyWidget;
+export '/pages/test/test_widget.dart' show TestWidget;
+export '/pages/projects_copy/projects_copy_widget.dart' show ProjectsCopyWidget;

@@ -443,7 +443,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Mahsulot tavsifi',
     },
     'e07p449j': {
-      'en': 'Listening App',
+      'en': 'Listening App Admin',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
@@ -455,7 +455,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Mahsulot tavsifi',
     },
     'a9ul37lh': {
-      'en': 'Listening App',
+      'en': 'Store invoice',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
@@ -473,7 +473,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Batafsil',
     },
     'ifmxrk5i': {
-      'en': 'Listening App',
+      'en': 'Nearby (당근)',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
@@ -485,7 +485,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Mahsulot tavsifi',
     },
     'z8a9t2uk': {
-      'en': 'Listening App',
+      'en': 'CameraMeasure',
       'ko': '듣기 앱',
       'ru': 'Приложение для прослушивания',
       'uz': 'Tinglash ilovasi',
@@ -508,7 +508,163 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ru': 'Описание продукта',
       'uz': 'Mahsulot tavsifi',
     },
+    'asztitj7': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '1q4pypoh': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'chz2oadi': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'p5wpb10d': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'mh5musjl': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'gwyxa1a5': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
     'jaotnnw4': {
+      'en': 'Close',
+      'ko': '닫다',
+      'ru': 'Закрывать',
+      'uz': 'Yopish',
+    },
+    'zy3dezt3': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'fegwe3cf': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'sjkncood': {
+      'en': 'Listening App Admin',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'ok8jgfy9': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'p7iqykim': {
+      'en': 'Store invoice',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '616tify8': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    '3w6dxaon': {
+      'en': 'See More',
+      'ko': '더보기',
+      'ru': 'Узнать больше',
+      'uz': 'Batafsil',
+    },
+    'ytpawdw3': {
+      'en': 'Nearby (당근)',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'm0bzfiwm': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'tk25qmxg': {
+      'en': 'CameraMeasure',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'ugftvxzp': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'wqdy3lij': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'nrk9jhnb': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'xhdtaqmx': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'z0xpag14': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    '3zk6o9vm': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'tta6z37r': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'l72remck': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'ghqgfx0c': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'c8omnlk3': {
       'en': 'Close',
       'ko': '닫다',
       'ru': 'Закрывать',
@@ -816,6 +972,138 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': 'Uy',
     },
   },
+  // test
+  {
+    '4x1bbeaq': {
+      'en': 'Home',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+  },
+  // ProjectsCopy
+  {
+    '5c1azij0': {
+      'en': 'See More',
+      'ko': '더보기',
+      'ru': 'Узнать больше',
+      'uz': 'Batafsil',
+    },
+    'gktgzter': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    's8ai7k7o': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'h17w7m94': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'guf48g8g': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    '61ek6956': {
+      'en': 'See More',
+      'ko': '더보기',
+      'ru': 'Узнать больше',
+      'uz': 'Batafsil',
+    },
+    '2oso6alg': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '6umeb60n': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'ud9vai21': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'yeqk5yo6': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'lt36uh24': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '6qvee02e': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'g1xe25qm': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '3xihhhi7': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'ojx7v1aq': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    '37nqt8lm': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'h5elvhfs': {
+      'en': 'Listening App',
+      'ko': '듣기 앱',
+      'ru': 'Приложение для прослушивания',
+      'uz': 'Tinglash ilovasi',
+    },
+    'zifiucxa': {
+      'en': 'Prodect description',
+      'ko': '제품 설명',
+      'ru': 'Описание продукта',
+      'uz': 'Mahsulot tavsifi',
+    },
+    'nbit157x': {
+      'en': 'Close',
+      'ko': '닫다',
+      'ru': 'Закрывать',
+      'uz': 'Yopish',
+    },
+    'loly8255': {
+      'en': 'Home',
+      'ko': '집',
+      'ru': 'Дом',
+      'uz': 'Uy',
+    },
+  },
   // Header
   {
     'v067qzyq': {
@@ -922,12 +1210,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': '트위터',
       'ru': 'Твиттер',
       'uz': 'Twitter',
-    },
-    'zx2maogv': {
-      'en': 'google map',
-      'ko': '구글지도',
-      'ru': 'Google Map',
-      'uz': 'Google xarita',
     },
   },
   // checkMessages
@@ -1119,6 +1401,72 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': '',
     },
   },
+  // mobileProjectDetails
+  {
+    '62yma3gi': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    '9voh8erl': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'plxpzdgu': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'hjfdxykj': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'ks2h1r1c': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'u3a7hx06': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'fx6g2qpa': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'a8e84i59': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'gawqej40': {
+      'en':
+          '111111 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make .',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+  },
   // Miscellaneous
   {
     'jzplktut': {
@@ -1170,6 +1518,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'uz': '',
     },
     'ig0cm822': {
+      'en': '',
+      'ko': '',
+      'ru': '',
+      'uz': '',
+    },
+    'vp7pl6yl': {
       'en': '',
       'ko': '',
       'ru': '',

@@ -3,7 +3,6 @@ import '/components/footer_widget.dart';
 import '/components/header_widget.dart';
 import '/components/mobile_footer_widget.dart';
 import '/components/mobile_menu_widget.dart';
-import '/components/mobile_social_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -43,14 +42,14 @@ class _SkillsWidgetState extends State<SkillsWidget>
         ),
       ],
     ),
-    'columnOnPageLoadAnimation': AnimationInfo(
+    'columnOnPageLoadAnimation1': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 750.ms,
-          begin: const Offset(-52.0, 0.0),
+          begin: const Offset(0.0, -50.0),
           end: const Offset(0.0, 0.0),
         ),
       ],
@@ -87,6 +86,18 @@ class _SkillsWidgetState extends State<SkillsWidget>
           delay: 0.ms,
           duration: 750.ms,
           begin: const Offset(52.0, 0.0),
+          end: const Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'columnOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: const Offset(0.0, -60.0),
           end: const Offset(0.0, 0.0),
         ),
       ],
@@ -218,7 +229,7 @@ class _SkillsWidgetState extends State<SkillsWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 25.0, 0.0, 0.0),
                           child: Container(
-                            height: MediaQuery.sizeOf(context).height * 0.35,
+                            height: MediaQuery.sizeOf(context).height * 0.25,
                             decoration: const BoxDecoration(),
                             alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Column(
@@ -255,12 +266,12 @@ class _SkillsWidgetState extends State<SkillsWidget>
                                 ),
                               ],
                             ).animateOnPageLoad(
-                                animationsMap['columnOnPageLoadAnimation']!),
+                                animationsMap['columnOnPageLoadAnimation1']!),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 30.0),
+                              0.0, 100.0, 0.0, 30.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
                               'on99v923' /* My Skills */,
@@ -1153,7 +1164,8 @@ class _SkillsWidgetState extends State<SkillsWidget>
                                     animationsMap['rowOnPageLoadAnimation4']!),
                               ),
                             ],
-                          ),
+                          ).animateOnPageLoad(
+                              animationsMap['columnOnPageLoadAnimation2']!),
                         if (MediaQuery.sizeOf(context).width < 500.0)
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1359,16 +1371,6 @@ class _SkillsWidgetState extends State<SkillsWidget>
                         model: _model.footerModel,
                         updateCallback: () => setState(() {}),
                         child: const FooterWidget(),
-                      ),
-                    ),
-                  if (MediaQuery.sizeOf(context).width < 500.0)
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
-                      child: wrapWithModel(
-                        model: _model.mobileSocialModel,
-                        updateCallback: () => setState(() {}),
-                        child: const MobileSocialWidget(),
                       ),
                     ),
                   if (MediaQuery.sizeOf(context).width < 500.0)

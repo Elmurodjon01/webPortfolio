@@ -528,28 +528,6 @@ class _FooterWidgetState extends State<FooterWidget> {
                               ],
                             ),
                           ),
-                          Container(
-                            width: 320.0,
-                            height: 230.0,
-                            decoration: const BoxDecoration(),
-                            child: Container(
-                              width: 200.0,
-                              height: 200.0,
-                              decoration: const BoxDecoration(),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'zx2maogv' /* google map */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .headlineMedium
-                                    .override(
-                                      fontFamily: 'Outfit',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
-                                    ),
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                     ),

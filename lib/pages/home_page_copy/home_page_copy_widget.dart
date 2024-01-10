@@ -158,7 +158,7 @@ class _HomePageCopyWidgetState extends State<HomePageCopyWidget>
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         wrapWithModel(
                           model: _model.toolsModel,
@@ -201,6 +201,22 @@ class _HomePageCopyWidgetState extends State<HomePageCopyWidget>
                                           20.0,
                                         ),
                                       ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 20.0),
+                              child: Container(
+                                width: 250.0,
+                                height: 250.0,
+                                clipBehavior: Clip.antiAlias,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Image.network(
+                                  'https://picsum.photos/seed/342/600',
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),

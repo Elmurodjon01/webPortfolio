@@ -16,7 +16,10 @@ class ProjectsModel extends FlutterFlowModel<ProjectsWidget> {
   // Model for mobileMenu component.
   late MobileMenuModel mobileMenuModel;
   // State field(s) for Expandable widget.
-  late ExpandableController expandableController;
+  late ExpandableController expandableController1;
+
+  // State field(s) for Expandable widget.
+  late ExpandableController expandableController2;
 
   // Model for footer component.
   late FooterModel footerModel;
@@ -40,7 +43,8 @@ class ProjectsModel extends FlutterFlowModel<ProjectsWidget> {
   void dispose() {
     headerModel.dispose();
     mobileMenuModel.dispose();
-    expandableController.dispose();
+    expandableController1.dispose();
+    expandableController2.dispose();
     footerModel.dispose();
     mobileFooterModel.dispose();
     drawerModel.dispose();

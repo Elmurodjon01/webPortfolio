@@ -88,7 +88,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           });
 
                           context.pushNamed(
-                            'HomePage',
+                            'HomePageCopy',
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
@@ -325,7 +325,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           });
 
                           context.pushNamed(
-                            'Projects',
+                            'ProjectsCopy',
                             extra: <String, dynamic>{
                               kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
