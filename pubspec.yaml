@@ -70,6 +70,9 @@ dependencies:
 
   cupertino_icons: ^1.0.0
   flutter_svg: ^2.0.9
+  websafe_svg: ^3.0.0+5
+  flutter_custom_clippers: ^2.1.0
+  gap: ^3.0.1
 
 dependency_overrides:
   device_info_plus: 9.1.0

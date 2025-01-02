@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:webpage/homeView.dart';
+import 'package:webpage/home/view/homeView.dart';
+import 'package:webpage/splash/view/splashView.dart';
 
 class Entry extends StatelessWidget {
   const Entry({super.key});
@@ -8,7 +9,7 @@ class Entry extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: SplashView(),
     );
   }
 }
