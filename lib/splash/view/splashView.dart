@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:webpage/home/view/homeView.dart';
+import 'package:go_router/go_router.dart';
+import 'package:webpage/router.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -17,8 +18,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
 
   void navigateToLockScreen() {
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => HomeView()));
+      context.pushNamed(Routes.home.name);
     });
   }
 
