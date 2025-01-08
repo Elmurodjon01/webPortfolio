@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webpage/home/components/dockIcon.dart';
+import 'package:webpage/home/view/widgets/dockIcon.dart';
 import 'package:webpage/home/data/data.dart';
 
 Widget menuDock(BuildContext context, ValueNotifier<bool> isHovered) {

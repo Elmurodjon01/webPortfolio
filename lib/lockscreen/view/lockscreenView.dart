@@ -1,6 +1,15 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
+import 'package:webpage/helpers/prefs.dart';
+import 'package:webpage/helpers/shakeError.dart';
+import 'package:webpage/locator.dart';
+import 'package:webpage/lockscreen/view/widgets/lockTextField.dart';
+import 'package:webpage/main.dart';
+import 'package:webpage/router.dart';
 
 class Lockscreenview extends StatefulWidget {
   const Lockscreenview({super.key});
@@ -10,6 +19,19 @@ class Lockscreenview extends StatefulWidget {
 }
 
 class _LockscreenviewState extends State<Lockscreenview> {
+  TextEditingController userNameController = TextEditingController();
+  TextEditingController passController = TextEditingController();
+  ValueNotifier<bool> isLoading = ValueNotifier(false);
+  late AnimationController _shakeController;
+
+  @override
+  void dispose() {
+    _shakeController.dispose();
+    userNameController.dispose();
+    passController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -77,58 +99,86 @@ class _LockscreenviewState extends State<Lockscreenview> {
             Column(
               children: [
                 Container(
-                  height: 60,
-                  width: 60,
+                  height: 50,
+                  width: 50,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(
                       30,
                     ),
                   ),
+                  child: Image.asset('assets/icons/lock2.gif'),
                 ),
                 const Gap(15),
-                const Text(
-                  'User',
-                  style: TextStyle(
+                Text(
+                  isFirstTime['id'] ?? 'Guest',
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                 ),
                 const Gap(10),
-                Container(
-                  height: 30,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.4),
-                    borderRadius: BorderRadius.circular(15),
+                lockTextField(userNameController, 'Enter Username', null),
+                const Gap(10),
+                ShakeError(
+                  deltaX: 30,
+                  duration: const Duration(milliseconds: 800),
+                  controller: (controller) => _shakeController = controller,
+                  child: lockTextField(
+                    passController,
+                    'Enter Password',
+                    (value) async {
+                      if (isFirstTime['password'] == null) {
+                        await getIt.get<Storage>().storeCredentials(
+                            userNameController.text.trim(),
+                            passController.text.trim());
+                        context.goNamed(Routes.home.name);
+                      } else {
+                        if (isFirstTime['password'] ==
+                                passController.text.trim() &&
+                            isFirstTime['id'] ==
+                                userNameController.text.trim()) {
+                          isLoading.value = true;
+                          Timer(const Duration(seconds: 2), () {
+                            isLoading.value = false;
+                            context.goNamed(Routes.home.name);
+                          });
+                        } else {
+                          isLoading.value = true;
+                          Timer(const Duration(seconds: 2), () {
+                            isLoading.value = false;
+                            _shakeController
+                                .forward()
+                                .then((_) => _shakeController.reset());
+                          });
+                        }
+                      }
+                    },
                   ),
-                  child: Center(
-                    child: TextField(
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        height: 1.0,
-                      ),
-                      cursorHeight: 16,
-                      cursorColor: Colors.white,
-                      decoration: InputDecoration(
-                        isDense: true,
-                        border: InputBorder.none,
-                        contentPadding: const EdgeInsets.symmetric(
-                            horizontal: 15, vertical: 0),
-                        hintText: 'Enter Username',
-                        hintStyle: TextStyle(
-                          color: Colors.white.withOpacity(0.8),
-                          fontSize: 13,
+                ),
+                const Gap(20),
+                ValueListenableBuilder(
+                  valueListenable: isLoading,
+                  builder: (context, value, child) => value
+                      ? Container(
+                          height: 28,
+                          padding: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 80, 79, 79),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: const CircularProgressIndicator.adaptive(
+                            backgroundColor: Colors.white,
+                          ),
+                        )
+                      : const SizedBox(
+                          height: 28,
                         ),
-                      ),
-                    ),
-                  ),
                 ),
               ],
             ),
-            Expanded(flex: 3, child: Container()),
+            Expanded(flex: 1, child: Container()),
           ],
         ),
       ),

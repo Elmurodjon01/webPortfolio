@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:webpage/home/view/homeView.dart';
 import 'package:webpage/lockscreen/view/lockscreenView.dart';
-import 'package:webpage/splash/view/splashView.dart';
 
 enum Routes { home, splash }
 

@@ -17,7 +17,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
   bool determinate = false;
 
   void navigateToLockScreen() {
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       context.pushNamed(Routes.home.name);
     });
   }
@@ -68,7 +68,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
               semanticsLabel: 'Linear progress indicator',
             ),
           ),
-          Gap(300),
+          const Gap(300),
         ],
       ),
     );
